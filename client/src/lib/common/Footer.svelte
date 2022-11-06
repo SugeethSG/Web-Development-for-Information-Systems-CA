@@ -1,9 +1,14 @@
+<script>
+  import { Link } from "svelte-navigator";
+</script>
+
 <footer class="text-gray-600 body-font">
   <div
     class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
   >
-    <a
+    <Link
       class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+      to="/"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +23,7 @@
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
       </svg>
       <span class="ml-3 text-xl">Sugeeth Blogs</span>
-    </a>
+    </Link>
     <p
       class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
     >

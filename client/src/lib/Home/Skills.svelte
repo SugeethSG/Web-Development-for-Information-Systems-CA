@@ -32,8 +32,8 @@
             Designer
           </h2>
           <p class="leading-relaxed text-base">
-            I design simplistic and clean interfaces with suttle animations for
-            some eye candy.
+            I have designed minimalistic and clean interfaces with subtle
+            animations that is pleasing to the eyes.
           </p>
         </div>
       </div>
@@ -54,8 +54,8 @@
             Front-end Developer
           </h2>
           <p class="leading-relaxed text-base">
-            I like to adopt new technologies, and most of the time I enjoy
-            building things without major dependencies.
+            I enjoy working with new technologies and also building things
+            without major dependencies.
           </p>
         </div>
       </div>
@@ -76,7 +76,7 @@
             Back-end Developer
           </h2>
           <p class="leading-relaxed text-base">
-            I design, build, maintain and test back-end applications which are
+            I have designed, built and maintained back-end applications that are
             simple and scalable.
           </p>
         </div>

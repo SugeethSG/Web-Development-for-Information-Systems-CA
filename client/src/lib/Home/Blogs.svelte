@@ -1,3 +1,17 @@
+<script>
+  import Blog from "./Blog.svelte";
+  import { getBlogs } from "../../api/blogs";
+  import { onMount } from "svelte";
+  export let isEditable;
+  let blogs = [];
+  onMount(async () => {
+    blogs = await getBlogs();
+  });
+  async function blogDeleted() {
+    blogs = await getBlogs();
+  }
+</script>
+
 <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     <h1
@@ -7,126 +21,16 @@
       My blogs
     </h1>
     <div class="flex flex-wrap -m-4">
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img
-            alt="ecommerce"
-            class="object-cover object-center w-full h-full block"
-            src="https://dummyimage.com/423x263"
-          />
-        </a>
-        <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">
-            Daily dev tips
-          </h2>
-          <p class="mt-1">28 Aug 2022</p>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img
-            alt="ecommerce"
-            class="object-cover object-center w-full h-full block"
-            src="https://dummyimage.com/423x263"
-          />
-        </a>
-        <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">
-            Daily dev tips
-          </h2>
-          <p class="mt-1">28 Aug 2022</p>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img
-            alt="ecommerce"
-            class="object-cover object-center w-full h-full block"
-            src="https://dummyimage.com/423x263"
-          />
-        </a>
-        <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">
-            Daily dev tips
-          </h2>
-          <p class="mt-1">28 Aug 2022</p>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img
-            alt="ecommerce"
-            class="object-cover object-center w-full h-full block"
-            src="https://dummyimage.com/423x263"
-          />
-        </a>
-        <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">
-            Daily dev tips
-          </h2>
-          <p class="mt-1">28 Aug 2022</p>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img
-            alt="ecommerce"
-            class="object-cover object-center w-full h-full block"
-            src="https://dummyimage.com/423x263"
-          />
-        </a>
-        <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">
-            Daily dev tips
-          </h2>
-          <p class="mt-1">28 Aug 2022</p>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img
-            alt="ecommerce"
-            class="object-cover object-center w-full h-full block"
-            src="https://dummyimage.com/423x263"
-          />
-        </a>
-        <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">
-            Daily dev tips
-          </h2>
-          <p class="mt-1">28 Aug 2022</p>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img
-            alt="ecommerce"
-            class="object-cover object-center w-full h-full block"
-            src="https://dummyimage.com/423x263"
-          />
-        </a>
-        <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">
-            Daily dev tips
-          </h2>
-          <p class="mt-1">28 Aug 2022</p>
-        </div>
-      </div>
-      <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-        <a class="block relative h-48 rounded overflow-hidden">
-          <img
-            alt="ecommerce"
-            class="object-cover object-center w-full h-full block"
-            src="https://dummyimage.com/423x263"
-          />
-        </a>
-        <div class="mt-4">
-          <h2 class="text-gray-900 title-font text-lg font-medium">
-            Daily dev tips
-          </h2>
-          <p class="mt-1">28 Aug 2022</p>
-        </div>
-      </div>
+      {#each blogs as blog (blog.id)}
+        <Blog
+          {isEditable}
+          id={blog.id}
+          img={blog.img}
+          title={blog.title}
+          date={blog.date}
+          {blogDeleted}
+        />
+      {/each}
     </div>
   </div>
 </section>

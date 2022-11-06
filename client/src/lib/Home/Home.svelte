@@ -6,4 +6,4 @@
 
 <Hero />
 <Skills />
-<Blogs />
+<Blogs isEditable={false} />

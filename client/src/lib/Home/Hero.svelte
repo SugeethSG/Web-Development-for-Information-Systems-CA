@@ -1,3 +1,7 @@
+<script>
+  import { navigate } from "svelte-navigator";
+</script>
+
 <section class="text-gray-600 body-font">
   <div
     class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
@@ -11,15 +15,14 @@
         Designer & Full-stack Developer
       </h1>
       <p class="mb-8 leading-relaxed">
-        I am a designer & full-stack developer from India. I've worked with most
-        of the popular frameworks as a junior developer and freelancer. I
-        specialise in creating interactive experiences, functional interfaces
-        and secure & scalable backend. I am bachelors in computer applications
-        and pursuing masters in same. I love adopting and working with latest
-        web technologies.
+        Hello , I am a full-stack developer. I've worked with a lot of
+        frameworks as a junior developer. I specialise in creating interactive
+        experiences, functional interfaces and secure & scalable backend. I
+        enjoy working with latest web technologies.
       </p>
       <div class="flex justify-center">
         <button
+          on:click={() => navigate("/blog/1", { replace: true })}
           class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
           >Read my latest blog</button
         >
