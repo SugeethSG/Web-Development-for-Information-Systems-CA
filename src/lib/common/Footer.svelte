@@ -27,7 +27,7 @@
     <p
       class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
     >
-      © 2020 Sugeeth —
+      © 2022 Sugeeth —
       <a
         href="https://www.linkedin.com/in/sugeeth-s-g-5b2345194/"
         class="text-gray-600 ml-1"
