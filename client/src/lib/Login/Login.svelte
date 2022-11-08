@@ -6,16 +6,18 @@
   onMount(() => {
     if ($User.isAuthenticated) navigate("/dashboard", { replace: true });
   });
-  let user = {
+  let user;
+  user = {
     email: "",
     password: "",
   };
   /*
-  let user = {
+  user = {
     email: "admin@sugeethblogs.com",
     password: "Admin1234",
   };
   */
+  
   async function submit() {
     let res = await login(user);
     if (res) navigate("/dashboard", { replace: true });
