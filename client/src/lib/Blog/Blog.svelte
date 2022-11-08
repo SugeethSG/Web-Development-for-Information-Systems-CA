@@ -34,7 +34,7 @@
                   >Sugeeth</a
                 >
                 <p class="text-base font-light text-gray-500">
-                  Full Stack Developer & Designer
+                  IT Professional
                 </p>
                 <p class="text-base font-light text-gray-500">
                   {blog.date}
