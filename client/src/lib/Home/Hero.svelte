@@ -32,7 +32,7 @@
       <img
         class="object-cover object-center rounded"
         alt="hero"
-        src="https://dummyimage.com/720x600"
+        src="https://media-exp1.licdn.com/dms/image/C5603AQHwuJeAhkDc0A/profile-displayphoto-shrink_400_400/0/1650447367710?e=1673481600&v=beta&t=_SZPeof_SYTuRzta2AI1lyEHZvwNzGPLGBz_xVodg38"
       />
     </div>
   </div>
