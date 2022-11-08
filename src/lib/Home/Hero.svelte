@@ -12,13 +12,10 @@
       <h1
         class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
       >
-        Designer & Full-stack Developer
+         IT Support Engineer
       </h1>
       <p class="mb-8 leading-relaxed">
-        Hello , I am a full-stack developer. I've worked with a lot of
-        frameworks as a junior developer. I specialise in creating interactive
-        experiences, functional interfaces and secure & scalable backend. I
-        enjoy working with latest web technologies.
+        Hello, I am an IT Professional. 
       </p>
       <div class="flex justify-center">
         <button
@@ -32,7 +29,11 @@
       <img
         class="object-cover object-center rounded"
         alt="hero"
-        src="https://dummyimage.com/720x600"
+        src="https://media-exp1.licdn.com/dms/image/C5603AQHwuJeAhkDc0A/profile-displayphoto-shrink_400_400/0/1650447367710?e=1673481600&v=beta&t=_SZPeof_SYTuRzta2AI1lyEHZvwNzGPLGBz_xVodg38"
+      />
+    </div>
+  </div>
+"
       />
     </div>
   </div>

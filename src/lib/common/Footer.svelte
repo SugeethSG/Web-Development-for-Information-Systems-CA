@@ -29,7 +29,7 @@
     >
       © 2020 Sugeeth —
       <a
-        href="https://twitter.com/sugeeth"
+        href="https://www.linkedin.com/in/sugeeth-s-g-5b2345194/"
         class="text-gray-600 ml-1"
         rel="noopener noreferrer"
         target="_blank">@sugeeth</a
