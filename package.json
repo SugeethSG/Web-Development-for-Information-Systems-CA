@@ -6,7 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "start": "node server.js"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.1.0",
