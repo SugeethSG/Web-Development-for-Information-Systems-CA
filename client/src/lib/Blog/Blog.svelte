@@ -26,7 +26,7 @@
             <div class="inline-flex items-center mr-3 text-sm text-gray-900">
               <img
                 class="mr-4 w-16 h-16 rounded-full"
-                src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                src="https://media-exp1.licdn.com/dms/image/C5603AQHwuJeAhkDc0A/profile-displayphoto-shrink_400_400/0/1650447367710?e=1673481600&v=beta&t=_SZPeof_SYTuRzta2AI1lyEHZvwNzGPLGBz_xVodg38"
                 alt="Sugeeth"
               />
               <div>
