@@ -1,7 +1,7 @@
 import User from "../store/user";
 async function login(user) {
 console.log({user})
-		var response = await fetch('http://sugeethsg.pythonanywhere.com/Login', {method: "POST",
+		var response = await fetch('https://sugeethsg.pythonanywhere.com/Login', {method: "POST",
     body: JSON.stringify({ "username": user.email,
     "password": user.password})});
 		var result = await response.json();

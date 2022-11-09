@@ -3,7 +3,7 @@ import blogs from "../data/blogs";
 async function getBlogs() {
   let blogs2 = blogs;
   let username = localStorage.getItem("username");
-  var response = await fetch('http://sugeethsg.pythonanywhere.com/GetBlogs', {
+  var response = await fetch('https://sugeethsg.pythonanywhere.com/GetBlogs', {
     method: "POST",
     body: JSON.stringify(
       {
@@ -29,7 +29,7 @@ async function getBlog(id) {
 async function deleteBlog(id) {
   let username = localStorage.getItem("username");
   console.log({id});
-  var response = await fetch('http://sugeethsg.pythonanywhere.com/DeleteBlog', {
+  var response = await fetch('https://sugeethsg.pythonanywhere.com/DeleteBlog', {
     method: "POST",
     body: JSON.stringify(
       {
@@ -48,7 +48,7 @@ async function deleteBlog(id) {
 async function editBlog(blog) {
   let username = localStorage.getItem("username");
   console.log({blog});
-  var response = await fetch('http://sugeethsg.pythonanywhere.com/UpdateBlog', {
+  var response = await fetch('https://sugeethsg.pythonanywhere.com/UpdateBlog', {
     method: "POST",
     body: JSON.stringify(
       {
@@ -70,7 +70,7 @@ async function editBlog(blog) {
 async function addBlog(blog) {
   let username = localStorage.getItem("username");
   console.log({blog});
-  var response = await fetch('http://sugeethsg.pythonanywhere.com/AddBlog', {
+  var response = await fetch('https://sugeethsg.pythonanywhere.com/AddBlog', {
     method: "POST",
     body: JSON.stringify(
       {
